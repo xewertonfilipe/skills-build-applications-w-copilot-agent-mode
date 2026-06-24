@@ -1,11 +1,12 @@
 import { ActivityModel } from '../models/Activity';
-import { connectDatabase, disconnectDatabase } from '../database';
+import { connectDatabase, disconnectDatabase } from '../config/database';
 import { LeaderboardModel } from '../models/Leaderboard';
 import { TeamModel } from '../models/Team';
 import { UserModel } from '../models/User';
 import { WorkoutModel } from '../models/Workout';
 
 const seed = async () => {
+  console.log('Seed command: npm run seed --prefix octofit-tracker/backend');
   console.log('Seed the octofit_db database with test data');
 
   await connectDatabase();
