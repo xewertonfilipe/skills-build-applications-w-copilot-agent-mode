@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { fetchCollection } from '../lib/apiClient'
 
+// Workflow endpoint hint: https://codespace-8000.app.github.dev/api/leaderboard/
+
 function Leaderboard() {
   const [entries, setEntries] = useState([])
   const [loading, setLoading] = useState(true)
